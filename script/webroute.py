@@ -22,3 +22,15 @@ def isShortest(f_lng,f_lat,t_lng,t_lat,threshold):
 	if(routes==0):
 	    print("no steps");
 	return (routes==1 or abs(distance-threshold)<50);
+def getStatus(f_lng,f_lat,t_lng,t_lat):
+	URL = url+"origin="+str(f_lng)+','+str(f_lat)+"&destination="+str(t_lng)+','+str(t_lat)+ \
+	"&strategy="+str(stg)+"&extensions=all&output=xml&key="+key;
+	try :
+		html = urlopen(URL);
+	except HTTPError as e:
+		print("URL error");
+	bsObj =  BeautifulSoup(html.read().decode("utf-8"));
+	distance = float(bsObj.route.path.step.distance.getText())
+	time = float(bsObj.route.path.step.duration.getText())
+	status = bsObj.route.path.tmc.status.getText()
+	return distance,time,status

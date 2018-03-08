@@ -1,7 +1,7 @@
 # debug if the latlng is correct
 import pandas as pd
 import numpy as np
-import isshortest as sh
+import webroute as sh
 import time
 f = '/Users/left/WXRd/data/WX_ring/major_edges_lnglat.csv'
 df = pd.read_csv(f)
