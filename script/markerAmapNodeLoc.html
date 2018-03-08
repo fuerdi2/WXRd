@@ -1,0 +1,71 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <style type="text/css">
+      body,html,#container{
+        height: 95%;
+        margin: 0px;
+      }
+    </style>
+    <title>快速入门</title>
+  </head>
+  <body>
+    <div id="container" tabindex="0"></div>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.0&key=79508e9bb55bd15284d6c5a097fe780c"></script>
+    <script type="text/javascript">
+        var map = new AMap.Map('container',{
+            resizeEnable: true,
+            center: [120.557814,31.293278],
+            expandZoomRange:true,
+            zoom:20,
+            zooms:[3,20],
+        });
+
+        var markers = [{title:"1",position:[120.550062,31.292779]},{title:"2",position:[120.556387,31.29319]},{title:"3",position:[120.55863,31.293405]},{title:"4",position:[120.536744,31.298306]},{title:"5",position:[120.54772,31.299225]},{title:"6",position:[120.557718,31.300066]},{title:"7",position:[120.535263,31.294697]},{title:"8",position:[120.540576,31.295015]},{title:"9",position:[120.541885,31.295054]},{title:"10",position:[120.540513,31.295854]},{title:"11",position:[120.570513,31.294237]},{title:"12",position:[120.571593,31.294362]},{title:"13",position:[120.556982,31.298425]},{title:"14",position:[120.555976,31.298349]},{title:"15",position:[120.557107,31.29323]},{title:"16",position:[120.569544,31.297821]},{title:"17",position:[120.562832,31.297257]},{title:"18",position:[120.535641,31.299115]},{title:"19",position:[120.555662,31.296328]},{title:"20",position:[120.535612,31.2838]},{title:"21",position:[120.565615,31.297579]},{title:"22",position:[120.537603,31.284095]},{title:"23",position:[120.543428,31.284202]},{title:"24",position:[120.545796,31.28471]},{title:"25",position:[120.547913,31.285583]},{title:"26",position:[120.548473,31.285795]},{title:"27",position:[120.550336,31.286691]},{title:"28",position:[120.557922,31.288054]},{title:"29",position:[120.559622,31.288163]},{title:"30",position:[120.570293,31.288486]},{title:"31",position:[120.572799,31.294683]},{title:"32",position:[120.534268,31.283666]},{title:"33",position:[120.535251,31.283767]},{title:"34",position:[120.538882,31.283977]},{title:"35",position:[120.568935,31.294052]},{title:"36",position:[120.53437,31.294664]},{title:"37",position:[120.573544,31.291785]},{title:"38",position:[120.550119,31.295713]},{title:"39",position:[120.551039,31.295829]},{title:"40",position:[120.535486,31.299102]},{title:"41",position:[120.542678,31.298858]},{title:"42",position:[120.535279,31.301331]},{title:"43",position:[120.536563,31.284711]},{title:"44",position:[120.549512,31.287077]},{title:"45",position:[120.54955,31.287047]},{title:"46",position:[120.54269,31.298738]},{title:"47",position:[120.549589,31.285629]},{title:"48",position:[120.557886,31.289403]},{title:"49",position:[120.549684,31.285592]},{title:"50",position:[120.556865,31.299275]},{title:"51",position:[120.570037,31.294198]},{title:"52",position:[120.55705,31.298861]},{title:"53",position:[120.557161,31.297161]},{title:"54",position:[120.562957,31.29674]},{title:"55",position:[120.557104,31.297698]},{title:"56",position:[120.55873,31.289234]},{title:"57",position:[120.558335,31.290952]},{title:"58",position:[120.544464,31.295852]},{title:"59",position:[120.545871,31.297066]},{title:"60",position:[120.557398,31.295773]},{title:"61",position:[120.55772,31.293946]},{title:"62",position:[120.557619,31.294448]},{title:"63",position:[120.558457,31.290331]},{title:"64",position:[120.558735,31.288981]},{title:"65",position:[120.559198,31.287177]},{title:"67",position:[120.566733,31.298934]},{title:"68",position:[120.566512,31.299591]},{title:"69",position:[120.566559,31.298901]},{title:"71",position:[120.567496,31.295972]},{title:"72",position:[120.567597,31.295681]},{title:"73",position:[120.567423,31.296401]},{title:"74",position:[120.568452,31.292992]},{title:"75",position:[120.547051,31.297135]},{title:"76",position:[120.568811,31.292146]},{title:"77",position:[120.56966,31.289766]},{title:"78",position:[120.572257,31.294482]},{title:"79",position:[120.571945,31.29506]},{title:"80",position:[120.544909,31.282811]},{title:"81",position:[120.558272,31.29729]},{title:"82",position:[120.558352,31.296372]},{title:"83",position:[120.560209,31.295919]},{title:"84",position:[120.572651,31.293658]},{title:"85",position:[120.552694,31.292986]},{title:"87",position:[120.553647,31.296136]},{title:"88",position:[120.55476,31.29311]},{title:"91",position:[120.554097,31.294963]},{title:"92",position:[120.557325,31.295531]},{title:"93",position:[120.55248,31.295446]},{title:"406",position:[120.536744,31.281964]},{title:"407",position:[120.552676,31.293446]},{title:"408",position:[120.568224,31.296532]},{title:"409",position:[120.539967,31.298578]},{title:"410",position:[120.540592,31.298592]},{title:"411",position:[120.53817,31.298399]},{title:"412",position:[120.548774,31.297652]},{title:"413",position:[120.552912,31.299686]},{title:"414",position:[120.552818,31.29966]},{title:"415",position:[120.560091,31.30027]},{title:"416",position:[120.559927,31.300223]},{title:"417",position:[120.570131,31.299284]},{title:"418",position:[120.554135,31.296235]},{title:"419",position:[120.538615,31.294878]},{title:"420",position:[120.539505,31.294887]},{title:"421",position:[120.546034,31.295294]},{title:"422",position:[120.542801,31.295094]},{title:"423",position:[120.55162,31.2929]},{title:"424",position:[120.56192,31.291615]},{title:"425",position:[120.56592,31.293796]},{title:"426",position:[120.549461,31.290036]},{title:"427",position:[120.549468,31.288538]},{title:"428",position:[120.547846,31.285576]},{title:"429",position:[120.541635,31.284106]},{title:"430",position:[120.536017,31.296486]},{title:"431",position:[120.535984,31.2965]},{title:"432",position:[120.536326,31.291823]},{title:"433",position:[120.536364,31.291824]},{title:"434",position:[120.536508,31.28779]},{title:"435",position:[120.536481,31.287802]},{title:"436",position:[120.542902,31.296781]},{title:"437",position:[120.563128,31.28982]},{title:"438",position:[120.555666,31.299825]},{title:"745",position:[120.549058,31.294768]},{title:"1154",position:[120.561843,31.301166]},{title:"1156",position:[120.566721,31.296674]},{title:"1192",position:[120.555001,31.287185]},{title:"1208",position:[120.539518,31.283248]},{title:"1233",position:[120.561937,31.299998]},{title:"1240",position:[120.559758,31.292734]},{title:"1541",position:[120.55494,31.288443]},{title:"1662",position:[120.562093,31.28975]},{title:"1672",position:[120.549362,31.290035]},{title:"1674",position:[120.548256,31.289957]},{title:"1678",position:[120.559684,31.293333]},{title:"1683",position:[120.545346,31.301437]},{title:"1874",position:[120.567115,31.28934]},{title:"1929",position:[120.569203,31.29272]},{title:"1953",position:[120.557654,31.291379]},{title:"2037",position:[120.567171,31.288863]},{title:"2058",position:[120.556109,31.301667]},{title:"2060",position:[120.557969,31.292382]},{title:"2062",position:[120.558149,31.291441]},{title:"2115",position:[120.549045,31.296094]},{title:"2124",position:[120.544779,31.282801]},{title:"2126",position:[120.539509,31.283955]},{title:"2131",position:[120.544204,31.285904]},{title:"2151",position:[120.560305,31.297517]},{title:"2319",position:[120.569336,31.301083]},{title:"2321",position:[120.56898,31.301978]},{title:"2448",position:[120.568607,31.290503]},{title:"2449",position:[120.569229,31.290649]},{title:"2484",position:[120.567218,31.300521]},{title:"2486",position:[120.567184,31.300864]},{title:"2500",position:[120.562303,31.293535]},{title:"2595",position:[120.562103,31.297184]},{title:"2597",position:[120.561895,31.297865]},{title:"2611",position:[120.572339,31.289426]},{title:"2678",position:[120.5619,31.300409]},{title:"2709",position:[120.564493,31.300626]},{title:"2751",position:[120.558243,31.296763]},{title:"2831",position:[120.541412,31.284159]},{title:"2839",position:[120.535731,31.285972]},{title:"2904",position:[120.549922,31.285214]},{title:"2960",position:[120.554048,31.292999]},{title:"2961",position:[120.554125,31.292671]},{title:"2973",position:[120.570089,31.301347]},{title:"2993",position:[120.556587,31.296594]},{title:"2997",position:[120.550134,31.288591]},{title:"3014",position:[120.552369,31.295928]},{title:"3017",position:[120.545626,31.298996]},{title:"3019",position:[120.54604,31.295402]},{title:"3020",position:[120.544478,31.295263]},{title:"3039",position:[120.542508,31.300292]},{title:"3052",position:[120.548021,31.301228]},{title:"3078",position:[120.55902,31.287155]},{title:"3085",position:[120.559516,31.290067]},{title:"3087",position:[120.559512,31.289583]},{title:"3089",position:[120.564326,31.289048]},{title:"3090",position:[120.564398,31.288567]},{title:"3098",position:[120.573197,31.290266]},{title:"3124",position:[120.552867,31.286874]},{title:"3161",position:[120.57468,31.289847]},{title:"3181",position:[120.563324,31.294112]},{title:"3187",position:[120.567912,31.294856]},{title:"3209",position:[120.549527,31.288559]},{title:"3211",position:[120.55488,31.287913]},{title:"3221",position:[120.556825,31.287547]},{title:"3265",position:[120.55567,31.299924]},{title:"3296",position:[120.569926,31.295173]},{title:"3302",position:[120.567759,31.295444]},{title:"3418",position:[120.571181,31.289759]},{title:"3421",position:[120.571971,31.290495]},{title:"3423",position:[120.573199,31.291025]},{title:"3425",position:[120.57381,31.291139]},{title:"3758",position:[120.558798,31.288622]},{title:"4623",position:[120.565569,31.302757]},{title:"4624",position:[120.567278,31.296736]},{title:"4682",position:[120.558088,31.292388]},{title:"4835",position:[120.560425,31.297011]},{title:"4851",position:[120.556796,31.288006]},{title:"4855",position:[120.558667,31.28947]},{title:"5143",position:[120.549339,31.292731]},{title:"5152",position:[120.548952,31.296121]},{title:"5153",position:[120.548987,31.295532]},{title:"5191",position:[120.54832,31.300253]},{title:"5194",position:[120.54818,31.301299]},{title:"5249",position:[120.563354,31.293613]},{title:"5265",position:[120.548588,31.299321]},{title:"5272",position:[120.568092,31.293932]},{title:"5275",position:[120.566608,31.293815]},{title:"5282",position:[120.561697,31.29351]},{title:"5295",position:[120.548704,31.298528]},{title:"5434",position:[120.559183,31.29338]},{title:"5439",position:[120.560895,31.293418]},{title:"5440",position:[120.54911,31.294882]},{title:"5483",position:[120.557798,31.293263]},{title:"5515",position:[120.574495,31.29531]},{title:"5516",position:[120.574508,31.295291]},{title:"6020",position:[120.56221,31.288375]},{title:"6022",position:[120.56228,31.287639]},{title:"6024",position:[120.558952,31.288118]},{title:"6025",position:[120.566616,31.288769]},{title:"6026",position:[120.572133,31.289998]},{title:"6076",position:[120.536578,31.283871]},{title:"6081",position:[120.53661,31.281959]},{title:"6140",position:[120.536412,31.2892]},{title:"6142",position:[120.536558,31.285986]},{title:"6152",position:[120.536224,31.294688]},{title:"6382",position:[120.54693,31.284621]},{title:"6383",position:[120.549716,31.285198]},{title:"6392",position:[120.536272,31.294146]},{title:"6395",position:[120.543067,31.295171]},{title:"6448",position:[120.549663,31.299524]},{title:"6449",position:[120.565455,31.300693]},{title:"6450",position:[120.565454,31.300724]},{title:"6482",position:[120.535747,31.298252]},{title:"6583",position:[120.557526,31.295412]},{title:"6585",position:[120.560635,31.295969]},{title:"6590",position:[120.56672,31.288209]},{title:"6690",position:[120.574123,31.29051]},{title:"6711",position:[120.570929,31.297463]},{title:"6845",position:[120.549584,31.286191]},{title:"6892",position:[120.555904,31.301667]},{title:"6905",position:[120.544767,31.284313]},{title:"7333",position:[120.565685,31.302732]},{title:"7385",position:[120.570134,31.288436]},{title:"7390",position:[120.566187,31.300789]},{title:"7392",position:[120.549694,31.299386]},{title:"7412",position:[120.569788,31.289412]},{title:"7458",position:[120.566971,31.297873]},{title:"7491",position:[120.57174,31.295502]},{title:"7557",position:[120.546681,31.285032]},{title:"7839",position:[120.568589,31.292592]},{title:"7842",position:[120.557274,31.296628]},{title:"7863",position:[120.55262,31.287421]},{title:"7892",position:[120.568695,31.292119]},{title:"7916",position:[120.534262,31.283781]},{title:"8326",position:[120.556459,31.296515]},{title:"8353",position:[120.568312,31.293353]},{title:"8407",position:[120.535449,31.301301]},{title:"8409",position:[120.533035,31.294656]},{title:"8410",position:[120.533024,31.294481]},{title:"8411",position:[120.533928,31.289224]},{title:"8422",position:[120.55675,31.299959]}];
+        markers.forEach(function(marker) {
+        new AMap.Marker({
+            map: map,
+            draggable:true,
+            title: marker.title,
+            position: [marker.position[0], marker.position[1]],
+        })
+      });
+    </script>
+    <div id="myPageTop">
+    <table>
+        <tr>
+            <td>
+                <label>按关键字搜索：</label>
+            </td>
+            <td class="column2">
+                <label>左击获取经纬度：</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" placeholder="请输入关键字进行搜索" id="tipinput">
+            </td>
+            <td class="column2">
+                <input type="text" readonly="true" id="lnglat">
+            </td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript">
+    var clickEventListener = map.on('click', function(e) {
+        document.getElementById("lnglat").value = e.lnglat.getLng() + ',' + e.lnglat.getLat()
+    });
+    var auto = new AMap.Autocomplete({
+        input: "tipinput"
+    });
+    AMap.event.addListener(auto, "select", select);//注册监听，当选中某条记录时会触发
+    function select(e) {
+        if (e.poi && e.poi.location) {
+            map.setCenter(e.poi.location);
+        }
+    }
+</script>
+  </body>
+</html>
