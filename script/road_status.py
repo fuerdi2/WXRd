@@ -10,7 +10,7 @@ df2 = pd.read_csv(f2)
 
 df2 = df2[df2['isShortest']]
 
-f = open(os.path.dirname(os.getcwd())+'road_status.txt','w+')
+f = open(os.path.dirname(os.getcwd())+time.ctime()+'road_status.txt','w+')
 try:
     for i in df2.index:
         time.sleep(interval)
